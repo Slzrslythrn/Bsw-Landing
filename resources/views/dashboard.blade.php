@@ -22,7 +22,7 @@
 
         <link href="{{asset('css/templatemo-topic-listing.css')}}" rel="stylesheet">   
         
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     </head>
     
@@ -55,14 +55,14 @@
                             </li>
                             
                         </ul>
-                            <li class="nav-item dropdown" style="list-style:none">Hi! Pengguna
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <a class="dropdown-item" href="topics-listing.html">BSW Masyarakat</a>
-                                    <a class="dropdown-item" href="kesehatan.balde.php">BSW ASN</a>
-                                    <a class="dropdown-item" href="logout">Logout</a>
-                                    
-                                </ul>
-                            </li>
+                        <li class="nav-item dropdown" style="list-style:none">Hi! Pengguna
+                            <ul class="dropdown-menu dropdown-menu-light mt-3" aria-labelledby="navbarLightDropdownMenuLink">
+                                <a class="dropdown-item" href="bsw_masyarakat.blade.php">BSW Masyarakat</a>
+                                <a class="dropdown-item" href="bsw_asn.blade.php">BSW ASN</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
+                                
+                            </ul>
+                        </li>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                             </a>
                             <a href="kesehatan.blade.php">
                                 <div class="bg-white" style="
-                                     width: 74px;
+                                    width: 74px;
                                 height: 74px;
                                 padding: 0;
                                 border-radius: 10px;
@@ -155,15 +155,11 @@
                             </a>
             
                         </div>
-                            {{-- <div class="d-flex  justify-content-center align-items-center position-relative">
-                                <div class="position-absolute start-50 translate-middle" style="top:150px; z-index:444">
-                                <button type="button" class="btn btn-warning" style="width: 200px">Drop</button>
-                                </div>    
-                            </div> --}}
+                          
                         </div>
                     </div>                  
                 </div>    
-                          
+                        
             </section>
 
             <div class="d-flex  justify-content-center align-items-center position-relative">
@@ -173,8 +169,11 @@
             </div>
 
             <br>
+            <br>
+            <br>
+            <div id="apps"></div>
             <div class="col-12 text-center">
-                <h3 class="mb-2" style="color: #325358; margin-top:80px" id="apps">APLIKASI PEMERINTAH KOTA BOGOR</h3>
+                <h3 class="mb-2" style="color: #325358; margin-top:80px"">APLIKASI PEMERINTAH KOTA BOGOR</h3>
             </div>
 
             <section class="explore-section section-padding" id="section_2">
@@ -198,7 +197,160 @@
                                 <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
                                     <div class="row">
                                         <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Web Design</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Kesehatan</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Pemerintahan</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Web Design</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Web Design</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Web Design</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Web Design</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Web Design</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
+                                                <a href="topics-detail.html">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Web Design</h5>
+
+                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
+                                            <div class="custom-block shadow-lg">
                                                 <a href="topics-detail.html">
                                                     <div class="d-flex">
                                                         <div>
@@ -215,260 +367,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Graphic</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Logo Design</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                                    </div>
-
-                                                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
                                         
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Web Design</h5>
-
-                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Graphic</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        {{-- <div class="w-100"></div> --}}
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Web Design</h5>
-
-                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                    </div>
-
-                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Graphic</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Logo Design</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                                    </div>
-
-                                                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Web Design</h5>
-
-                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Graphic</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Web Design</h5>
-
-                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                    </div>
-
-                                                    <img src="images/topics/light.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Graphic</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Logo Design</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                                    </div>
-
-                                                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Web Design</h5>
-
-                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0" style="height: 250px; width:200px">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Graphic</h5>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                         </div>
-                                  </div>
+                                </div>
 
                                 <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab" tabindex="0">   <div class="row">
                                         <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
@@ -488,151 +391,63 @@
                                                 </a>
                                             </div>
                                         </div>
-
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="custom-block custom-block-overlay">
-                                                <div class="d-flex flex-column h-100">
-                                                    <img src="images/businesswoman-using-tablet-analysis-graph-company-finance-strategy-statistics-success-concept-planning-future-office-room.jpg" class="custom-block-image img-fluid" alt="">
-
-                                                    <div class="custom-block-overlay-text d-flex">
-                                                        <div>
-                                                            <h5 class="text-white mb-2">Finance</h5>
-
-                                                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis</p>
-
-                                                            <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
-                                                        </div>
-
-                                                        <span class="badge bg-finance rounded-pill ms-auto">25</span>
-                                                    </div>
-
-                                                    <div class="social-share d-flex">
-                                                        <p class="text-white me-4">Share:</p>
-
-                                                        <ul class="social-icon">
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                                            </li>
-
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                                            </li>
-
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-pinterest"></a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
-                                                    </div>
-
-                                                    <div class="section-overlay"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Composing Song</h5>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Compose_music_re_wpiw.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Online Music</h5>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_happy_music_g6wc.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Podcast</h5>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">20</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Podcast_audience_re_4i5q.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Graduation</h5>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-education rounded-pill ms-auto">80</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Graduation_re_gthn.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                     </div>
                 </div>
             </section>
 
+        <footer style=" margin-top:600px"> 
+            <section id="section_5" style="background-color: #3B7799; padding : 20px">
+                <div class="container d-flex" style="color: #ffffff; justify-content :center">
+                        <a class="me-5" href="#" style="color: #ffffff;"><i class="fa-brands fa-facebook fa-xl"></i> Pemerintah Kota Bogor</a>   
 
-            <section class="contact-section section-padding section-bg" id="section_5">
-                <div class="container">
-                    
-                        <a href="#" class="fa fa-facebook"></a>
-                 
+                        <a class="me-5" href="#" style="color: #ffffff;"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i> Pemerintah Kota Bogor</a>
+
+                        <a class="me-5" href="#" style="color: #ffffff;"><i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i> PemKotaBogor</a>
+
+                        <a class="me-5" href="#" style="color: #ffffff;"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i> PemkotaBogor</a>
+
+                        
                 </div>
             </section>
-        </main>
-
-<footer class="site-footer section-padding">
-            <div class="container">
-                
-            </div>
+            <section id="section_6" style="background-color: #383838; padding : 50px">
+                <div class="container d-flex" style="color: #ffffff; justify-content :center">
+                    <div class="me-5">
+                        <h6 style="color: #ffffff">Bogor Single Window</h6>
+                        <p style="color: #ffffff;font-size:12px">Bogor Single Window adalah Portal Pemerintah Kota Bogor terkait</p> 
+                        <p style="color: #ffffff;font-size:12px;margin-top:-18px">layanan dari informasi kepada semua masyarakat di Kota Bogor</p>  
+                    </div>
+                    <div class="me-5">
+                        <h6 style="color: #ffffff">Alamat</h6>
+                        <p style="color: #ffffff;font-size:12px">Jl.Ir. H Juanda No.10, Rt01/RW01</p>   
+                        <p style="color: #ffffff;font-size:12px;margin-top:-18px">Paledang,Kecamatan Bogor Tengah,</p>
+                        <p style="color: #ffffff;font-size:12px;margin-top:-18px">KotaBogor,Jawa Barat 16121, Indonesia</p>
+                    </div>
+                    <div>
+                        <h6 style="color: #ffffff">Kontak</h6>
+                        <div class="d-flex">
+                        <a class="fa-brands fa-whatsapp" style="color: #ffffff;"></a>
+                        <p class="ms-2" style="color: #ffffff;font-size:12px">08123456789</p>
+                        </div>   
+                        <div class="d-flex" style="margin-top: -16px">
+                            <a class="fa-solid fa-envelope" style="color: #ffffff;"></a>
+                            {{-- <i class="" style="color: #ffffff;"></i> --}}
+                            <p class="ms-2" style="color: #ffffff;font-size:12px">kominfo@kotabogor.go.id</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section_7" style="background-color: #1A1A1A; padding : 10px;">
+                <div class="container d-flex" style="color: #ffffff; justify-content :center">
+                        <a class="me-5"style="color: #ffffff;"> Bogor Single Window 2023 Dinas komunikasi dan Informatika Kota Bogor.</a>   
+                        
+                </div>
+            </section>
         </footer>
+        
+    
+    </main>
 
 
         <!-- JAVASCRIPT FILES -->

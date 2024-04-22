@@ -10,6 +10,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('/logout', 'LoginController@logout')->name('logout');
+
 
 ?>
