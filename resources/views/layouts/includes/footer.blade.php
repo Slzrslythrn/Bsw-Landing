@@ -1,4 +1,4 @@
-<footer style=" margin-top:600px">
+<footer>
     <section id="section_5" style="background-color: #3B7799; padding : 20px">
         <div class="container d-flex" style="color: #ffffff; justify-content :center">
             <a class="me-5" href="#" style="color: #ffffff;"><i class="fa-brands fa-facebook fa-xl"></i> Pemerintah

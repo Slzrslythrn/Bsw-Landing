@@ -11,9 +11,11 @@ class AppLayout extends Component
     /**
      * Create a new component instance.
      */
+
+
+
     public function __construct()
     {
-        //
     }
 
     /**
@@ -21,6 +23,8 @@ class AppLayout extends Component
      */
     public function render(): View|Closure|string
     {
+
+        // dd($this->data);
         return view('layouts.app');
     }
 }

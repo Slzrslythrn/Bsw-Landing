@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" style="background-color: #fff; border-color: #fff">
     <div class="container">
-        <a class="navbar-brand" href="dashboard.blade.php">
-            <span>BSW</span>
+        <a class="navbar-brand" href="{{ route('home') }}">
+            <img width="60px" src="https://bsw-landing.kotabogor.go.id/v2/img/LOGOBSW5.png" alt="" >
         </a>
 
         <div class="d-lg-none ms-auto me-4">
@@ -16,11 +16,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-lg-5 me-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    <a class="nav-link click-scroll" class="text-primary" href="#section_1">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_2">Daftar Pelayanan</a>
+                    <a class="nav-link click-scroll" class="text-primary" href="#section_2">Daftar Pelayanan</a>
                 </li>
 
             </ul>

@@ -30,23 +30,21 @@
 
 <body id="top">
     <main>
-
         @include('layouts.includes.nav')
 
         {{ $slot }}
 
         @include('layouts.includes.footer')
 
-
     </main>
 
 
     <!-- JAVASCRIPT FILES -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src={{ asset('js/bootstrap.bundle.min.js') }}></script>
-    <script src={{ asset('js/jquery.sticky.js') }}></script>
-    <script src={{ asset('js/click-scroll.js') }}></script>
-    <script src={{ asset('js/custom.js') }}></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.sticky.js') }}"></script>
+    <script src="{{ asset('js/click-scroll.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 
 </body>
 
