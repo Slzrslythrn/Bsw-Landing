@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg" style="background-color: #fff; border-color: #fff">
+<nav class="navbar navbar-expand-lg" style="background-color: #fff; border-color: #fff;padding:0px">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img width="60px" src="https://bsw-landing.kotabogor.go.id/v2/img/LOGOBSW5.png" alt="" >
+            <img width="100px" src="https://bsw-landing.kotabogor.go.id/v2/img/LOGOBSW5.png" alt="" >
         </a>
 
         <div class="d-lg-none ms-auto me-4">
@@ -13,21 +13,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" style="background-color: #387799; border-radius:1px 1px 70px 70px; ">
             <ul class="navbar-nav ms-lg-5 me-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" class="text-primary" href="#section_1">Home</a>
+                    <a class="nav-link click-scroll" class="text-primary" href="#section_1" style="font-family: 'Roboto', sans-serif;text-transform: capitalize;font-size: 17px">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" class="text-primary" href="#section_2">Daftar Pelayanan</a>
+                    <a class="nav-link click-scroll" class="text-primary" href="#section_2" style="font-family: 'Roboto', sans-serif;text-transform: capitalize;font-size: 17px">Daftar Pelayanan</a>
                 </li>
 
             </ul>
             <div class="button">
-                <button class="btn"><a href="dashboard"
-                        style="color: white;border:2px dotted white;border-radius:50px;padding: 5px 10px 5px 10px">Login
-                        SSO</a></button>
+                <button class="btn me-5"><a href="dashboard"
+                    style="color: white;font-family: Poppins,helvetika,sans-serif;border:2px dotted white;border-radius:50px;padding: 5px 10px 5px 10px">Login
+                        SSO <i class="fa-solid fa-arrow-right-from-bracket"></i></a></button>
             </div>
         </div>
     </div>
