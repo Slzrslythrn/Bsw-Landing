@@ -16,11 +16,11 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="background-color: #387799; border-radius:1px 1px 70px 70px; ">
             <ul class="navbar-nav ms-lg-5 me-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" class="text-primary" href="#section_1" style="font-family: 'Roboto', sans-serif;text-transform: capitalize;font-size: 17px">Home</a>
+                    <a class="nav-link click-scroll" class="text-primary" href="#section_1" style="font-family: 'Roboto', sans-serif;text-transform: capitalize;font-size: 17px;font-weight: bold">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" class="text-primary" href="#section_2" style="font-family: 'Roboto', sans-serif;text-transform: capitalize;font-size: 17px">Daftar Pelayanan</a>
+                    <a class="nav-link click-scroll" class="text-primary" href="#section_2" style="font-family: 'Roboto', sans-serif;text-transform: capitalize;font-size: 17px;font-weight: bold">Daftar Pelayanan</a>
                 </li>
 
             </ul>

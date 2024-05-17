@@ -26,6 +26,24 @@
                     <div class="custom-block bg-white shadow-lg p-5" style="border-radius: 15px;height:240px">
                         <h3 class="text-center mb-5" style="color: #3B7799;margin-top:-10px">Aplikasi Pilihan</h3>
                         <div class="row gap-2 justify-content-center">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:150px">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel" style="font-family: Poppin,helvetika,sans-serif">Dibutuhkan Login SSO</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="font-family: Poppin,helvetika,sans-serif">
+                                      Untuk dapat mengakses layanan ini anda diharuskan login atau registrasi terlebih dahulu.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" style="background-color: #387799">Login SSO</button>
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #F39F55">Close</button>
+    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             @if (!empty($dataTerbanyak))
                                 @foreach ($dataTerbanyak['data'] as $row)
                                     <div class="col-md-2">
@@ -66,9 +84,9 @@
                     BOGOR
                 </h3>
             </div>
-            <div class="col-md text-center">
+            {{-- <div class="col-md text-center">
                 <h4 style="color: #325358; font-weight: 200;">{{ $namaLayanan ?? '' }}</h4>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -88,9 +106,9 @@
                                         @if (!empty($menuLayanan))
                                             @foreach ($menuLayanan['data'] as $row)
                                                 <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0"
-                                                    style="height: 250px; width:200px">
-                                                    <div class="custom-block shadow-lg">
-                                                        <a href="topics-detail.html">
+                                                    style="height: 250px; width:200px;margin-top:40px">
+                                                    <a href="topics-detail.html">
+                                                    <div class="custom-block shadow">
                                                             <div class="d-flex">
                                                                 <div>
                                                                     <h5 class="mb-2">Nama Layanan</h5>
@@ -100,8 +118,8 @@
                                                             </div>
                                                             <img src="https://bsw-landing.kotabogor.go.id/v2/img/LOGOBSW5.png"
                                                                 class="custom-block-image img-fluid" alt="">
-                                                        </a>
                                                     </div>
+                                                    </a>
                                                 </div>
                                             @endforeach
                                         @endif
@@ -135,11 +153,11 @@
 
                         </div>
                         <ul class="pagination justify-content-end">
-                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
                           </ul>
                     </div>
                 </div>
