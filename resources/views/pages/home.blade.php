@@ -1,18 +1,17 @@
 <x-app-layout>
+    {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
     <section class="hero-section d-flex justify-content-center align-items-center" id="section_1"
         style="background-size: cover;background-image: url({{ asset('images/topics/bg_heroo.jpg') }})">
         <div class="container">
             <div class="row">
 
-                <div class="container" style="margin-left: 100px;">
+                <div class="container-2" >
                     <a class="text-#387799" style="font-size: 48px;font-family:sans-serif;font-weight: bold">Bogor <span style="color:#f39f55;font-size: 48px">Single</span>  Window</a>
 
-                    <h6 class="text-#387799" style="font-family: sans-serif;font-size:26px;font-weight: bold"><a>Portal Aplikasi Pemerintah Kota Bogor Memberikan</a>
+                    <h6 class="text-#387799" style="font-family: sans-serif;font-size:23px;font-weight: bold"><a>Portal Aplikasi Pemerintah Kota Bogor Memberikan</a>
                         <a>layanan langsung kepada semua masyarakat di Kota Bogor</a> 
                     </h6>
-                    <a href="" class="bg-white p-2 text-black" style="border-radius: 20px">
-                        <img src="{{ asset('images/playstore.webp') }}" alt="" width="20px">
-                        Google Play Store</a>
+                    
                 </div>
             </div>
         </div>
@@ -23,33 +22,16 @@
         <div class="container">
             <div class="rows justify-content-center">
                 <div class="col-lg-12 col-12">
-                    <div class="custom-block bg-white shadow-lg p-5" style="border-radius: 15px;height:240px">
-                        <h3 class="text-center mb-5" style="color: #3B7799;margin-top:-10px">Aplikasi Pilihan</h3>
+                    <div class="custom-block bg-white shadow-lg p-5" style="border-radius: 15px;height:230px">
+                        <h3 class="text-center mb-5" style="color: #3B7799;margin-top:-30px;font-size:22px">Layanan yang sering digunakan
+                        </h3>
                         <div class="row gap-2 justify-content-center">
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:150px">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel" style="font-family: Poppin,helvetika,sans-serif">Dibutuhkan Login SSO</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body" style="font-family: Poppin,helvetika,sans-serif">
-                                      Untuk dapat mengakses layanan ini anda diharuskan login atau registrasi terlebih dahulu.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" style="background-color: #387799">Login SSO</button>
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #F39F55">Close</button>
-    
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
                             @if (!empty($dataTerbanyak))
                                 @foreach ($dataTerbanyak['data'] as $row)
                                     <div class="col-md-2">
                                         <a href="{{ isset($row['link_sso']) ? $row['link_sso'] : $row['link_website'] }}"
                                                 target="_blank">
-                                        <div class="card shadow" style="width: 74px;height:74px;margin-top:80px;margin-left:50px">
+                                        <div class="card shadow-sm" style="width: 74px;height:74px;margin-top:90px;margin-left:50px">
                                             
                                                 <img class="card-img-top"
                                                     src="{{ $row['icon'] ?? 'https://bsw-landing.kotabogor.go.id/v2/img/LOGOBSW5.png' }}"
@@ -80,13 +62,10 @@
         <div id="apps"></div>
         <div class="row" id="section_2">
             <div class="col-12 text-center">
-                <h3 class="" style="color: #325358; margin-top:80px; font-weight: 800">APLIKASI PEMERINTAH KOTA
+                <h3 class="" style="color: #325358; margin-top:50px;margin-bottom: -50px">APLIKASI PEMERINTAH KOTA
                     BOGOR
                 </h3>
             </div>
-            {{-- <div class="col-md text-center">
-                <h4 style="color: #325358; font-weight: 200;">{{ $namaLayanan ?? '' }}</h4>
-            </div> --}}
         </div>
     </section>
 
@@ -100,14 +79,31 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel"
-                                    aria-labelledby="design-tab" tabindex="0" >
+                                <div class="tab-pane fade show active" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <div class="row">
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:150px">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel" style="font-family: Poppin,helvetika,sans-serif">Dibutuhkan Login SSO</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="font-family: Poppin,helvetika,sans-serif">
+                                                  Untuk dapat mengakses layanan ini anda diharuskan login atau registrasi terlebih dahulu.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" style="background-color: #387799">Login SSO</button>
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #F39F55">Close</button>
+                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                         @if (!empty($menuLayanan))
                                             @foreach ($menuLayanan['data'] as $row)
                                                 <div class="col-lg-2 col-md-3 col-12 mb-3 mb-lg-0"
                                                     style="height: 250px; width:200px;margin-top:40px">
-                                                    <a href="topics-detail.html">
+                                                    <a href="#section_2">
                                                     <div class="custom-block shadow">
                                                             <div class="d-flex">
                                                                 <div>
